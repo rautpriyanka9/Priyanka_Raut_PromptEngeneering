@@ -1,9 +1,3 @@
-# Prompt Engineering Portfolio
-
-**Name:** Priyanka Raut  
-**Date:** [03.06.2026]  
-**LLM Used:** ChatGPT-5.5
-
 # Part 1: Prompt Design & Iteration
 
 ## 1.1 Scenario A: Technical Explanation
@@ -19,27 +13,53 @@ Explain the concept of **Neural Networks** to a 10-year-old child.
 |----------|---------|--------------|-----------------------------|
 | V1 | Explain neural networks. | N/A | Initial prompt was too broad and did not specify the audience. |
 | V2 | Explain neural networks to a 10-year-old child using simple language and examples. | Added target audience and examples. | Produced a more understandable explanation appropriate for children. |
-| V3 | Explain neural networks to a 10-year-old child using simple language, a real-life analogy, and a short example. Avoid technical jargon and keep it under 200 words. | Added analogy, word limit, and instruction to avoid jargon. | Generated a concise, engaging, and age-appropriate explanation. |
+| V3 | Explain neural networks to a 10-year-old child with a pictorial explanation. Use simple language and examples. | Added visual learning requirement. | Improved understanding by combining text with an educational infographic, making the concept easier for children to grasp. |
 
 ### Final Prompt
 
-> Explain neural networks to a 10-year-old child using simple language, a real-life analogy, and a short example. Avoid technical jargon and keep it under 200 words.
+> Explain neural networks to a 10-year-old child with a pictorial explanation. Use simple language and examples.
 
 ### Final LLM Response
 
-Imagine your brain is like a giant team of helpers. Each helper knows a tiny bit of information and works together to solve problems. A neural network works in a similar way.
+A neural network is like a team of tiny helpers inside a computer.
 
-Think about recognizing a cat in a photo. One helper looks for pointy ears, another looks for whiskers, and another looks for a tail. They share what they find, and together they decide whether the picture is a cat.
+Imagine you want to identify a cat in a picture. One helper looks for ears, another looks for whiskers, and another looks for a tail. Each helper shares what it finds, and together they decide whether the picture is a cat.
 
-Neural networks are computer systems that learn from many examples. If they see thousands of cat pictures, they become better at recognizing cats in new pictures.
+Neural networks learn by looking at many examples. The more pictures they see, the better they become at recognizing patterns and making decisions.
 
-Just like a student gets better by practicing many math problems, a neural network gets better by learning from lots of examples.
+Just like students improve by practicing, neural networks improve by learning from lots of examples.
 
-So, a neural network is a computer program that learns patterns and makes decisions by working like a team of tiny helpers.
+### Pictorial Explanation
+
+![Neural Network Infographic](images/neural-network-explained.png)
+
+*Figure 1: Educational infographic explaining neural networks to children.*
 
 ### Reflection
 
-The initial prompt generated a generic explanation. Adding the target audience improved readability and clarity. Including an analogy and limiting technical language produced a more engaging explanation suitable for children.
+The initial prompt generated a generic explanation. Adding the target audience improved readability and clarity. Including examples made the explanation more relatable. The final iteration introduced a pictorial explanation, which significantly enhanced understanding by combining text with visual learning. This approach made the concept more engaging, memorable, and easier for children to understand.
+
+---
+
+## 1.3 Role and Context Analysis
+
+### Example Prompt
+
+> You are an experienced elementary school teacher. Explain neural networks to a 10-year-old student using simple language and relatable examples.
+
+### Analysis
+
+Role prompting improved the explanation by:
+
+- Establishing expertise.
+- Adjusting vocabulary level.
+- Improving structure.
+- Producing age-appropriate examples.
+- Making the response more engaging and educational.
+
+### Conclusion
+
+Providing role and context significantly improves response quality by helping the model better understand the audience and desired communication style.
 
 ---
 ## 1.1 Scenario B: Professional Email
