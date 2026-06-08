@@ -175,14 +175,44 @@ The initial prompt generated generic taglines with limited creativity. By adding
 | V3 | You are an experienced HR professional. Write a polite email declining a job offer because I have accepted another opportunity. Thank the company, maintain a positive relationship, and express interest in future opportunities. | Added role assignment, reason for declining, future interest, and relationship-building elements. | Generated a professional and diplomatic email that preserves goodwill and networking opportunities. |
 
 ---
-
 ## Scenario C: Creative Content
+
+### Objective
+Create marketing content for an eco-friendly water bottle brand.
 
 | Version | Prompt | What Changed | Why This Improved the Output |
 |----------|---------|--------------|-----------------------------|
 | V1 | Create a tagline for an eco-friendly water bottle brand. | N/A | The prompt was too generic and did not provide information about brand values or tone. |
 | V2 | Create a catchy and memorable tagline for an eco-friendly water bottle brand that promotes sustainability and healthy living. | Added brand values and desired outcome. | Generated taglines more aligned with the product's purpose and customer appeal. |
-| V3 | You are a professional marketing copywriter for a sustainability-focused brand. Create five short, creative, and memorable taglines for a modern eco-friendly water bottle brand. Focus on sustainability, reducing plastic waste, and staying hydrated. Use a positive and inspiring tone. | Added role assignment, brand context, target message, tone, and quantity requirements. | Produced stronger marketing-focused taglines that were creative, memorable, and aligned with the brand strategy. |
+| V3 | Create five short, creative, and memorable taglines for a modern eco-friendly water bottle brand. Focus on sustainability, reducing plastic waste, and staying hydrated. Use a positive and inspiring tone suitable for marketing campaigns. | Added brand context, sustainability focus, desired tone, and quantity requirements. | Produced stronger marketing-focused taglines that were creative, memorable, and aligned with the brand strategy. |
+
+---
+
+### Final Prompt
+
+> Create five short, creative, and memorable taglines for a modern eco-friendly water bottle brand. Focus on sustainability, reducing plastic waste, and staying hydrated. Use a positive and inspiring tone suitable for marketing campaigns.
+
+### Final LLM Response
+
+1. **Sip Smart. Live Green.**
+2. **Hydrate Today. Protect Tomorrow.**
+3. **Refill the Bottle. Renew the Planet.**
+4. **Every Sip Makes a Difference.**
+5. **Drink Pure. Leave Less Behind.**
+
+### Selected Best Tagline
+
+**"Hydrate Today. Protect Tomorrow."**
+
+### Creative Marketing Flyer
+
+![Eco-Friendly Water Bottle Marketing Flyer](Images/marketing-flyer.png)
+
+*Figure 2: Marketing flyer promoting an eco-friendly water bottle brand using the selected tagline.*
+
+### Reflection
+
+The initial prompt generated a basic tagline with limited brand alignment. Adding sustainability and healthy living as key themes improved relevance and audience appeal. The final iteration provided detailed context, tone, and campaign objectives, resulting in multiple creative tagline options suitable for marketing use. Including a visual flyer further strengthened the campaign by combining persuasive messaging with engaging design.
 
 ---
 
