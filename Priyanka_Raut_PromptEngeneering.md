@@ -13,11 +13,11 @@ Explain the concept of **Neural Networks** to a 10-year-old child.
 |----------|---------|--------------|-----------------------------|
 | V1 | Explain neural networks. | N/A | Initial prompt was too broad and did not specify the audience. |
 | V2 | Explain neural networks to a 10-year-old child using simple language and examples. | Added target audience and examples. | Produced a more understandable explanation appropriate for children. |
-| V3 | Explain neural networks to a 10-year-old child with a pictorial explanation. Use simple language and examples. | Added visual learning requirement. | Improved understanding by combining text with an educational infographic, making the concept easier for children to grasp. |
+| V3 | You are an experienced elementary school teacher. Explain neural networks to a 10-year-old child using simple language, a real-life analogy, and a short example. Add pictorial explaination. | Added visual learning requirement. | Improved understanding by combining text with an educational infographic, making the concept easier for children to grasp. |
 
 ### Final Prompt
 
-> Explain neural networks to a 10-year-old child with a pictorial explanation. Use simple language and examples.
+> You are an experienced elementary school teacher. Explain neural networks to a 10-year-old child using simple language, a real-life analogy, and a short example. Add pictorial explaination.
 
 ### Final LLM Response
 
@@ -162,7 +162,7 @@ The initial prompt generated generic taglines with limited creativity. By adding
 |----------|---------|--------------|-----------------------------|
 | V1 | Explain neural networks. | N/A | The prompt was too broad and did not specify the audience or desired level of detail. |
 | V2 | Explain neural networks to a 10-year-old child using simple language and examples. | Added target audience and requested examples. | The explanation became easier to understand and more appropriate for children. |
-| V3 | You are an experienced elementary school teacher. Explain neural networks to a 10-year-old child using simple language, a real-life analogy, and a short example. Avoid technical jargon and keep it under 200 words. | Added role assignment, analogy requirement, word limit, and instruction to avoid jargon. | Produced a clear, engaging, age-appropriate explanation with relatable examples and better structure. |
+| V3 | You are an experienced elementary school teacher. Explain neural networks to a 10-year-old child using simple language, a real-life analogy, and a short example. Add pictorial explaination.. | Added role assignment, analogy requirement, word limit, and instruction to avoid jargon. | Produced a clear, engaging, age-appropriate explanation with relatable examples and better structure. |
 
 ---
 
