@@ -589,179 +589,93 @@ The chain-of-thought response showed that preparation should begin at **12:30 PM
 
 # 3.2 Few-Shot Prompting
 
-## Step 1: Zero-Shot Attempt
-
-### Objective
-
-Classify customer reviews as **Positive**, **Negative**, or **Neutral** without providing any examples to the LLM.
+## Task
+Create a sentiment classifier that categorizes customer reviews as **Positive**, **Negative**, or **Neutral**.
 
 ---
+
+# Step 1: Zero-Shot Attempt
 
 ## Zero-Shot Prompt
 
 > Classify the sentiment of each customer review as Positive, Negative, or Neutral.
 
----
+### Results
 
-## Reviews and Classifications
-
-| Review | Classification |
-|----------|---------------|
-| "The product arrived damaged and customer service was unhelpful." | **Negative** |
-| "Works as expected, nothing special but does the job." | **Neutral** |
-| "Absolutely love this! Best purchase I've made all year!" | **Positive** |
-| "The quality is okay but slightly overpriced for what you get." | **Neutral** |
-| "Terrible experience, would not recommend to anyone." | **Negative** |
+| Review # | Review | Classification |
+|-----------|---------|---------------|
+| 1 | "The product arrived damaged and customer service was unhelpful." | Negative |
+| 2 | "Works as expected, nothing special but does the job." | Neutral |
+| 3 | "Absolutely love this! Best purchase I've made all year!" | Positive |
+| 4 | "The quality is okay but slightly overpriced for what you get." | Neutral |
+| 5 | "Terrible experience, would not recommend to anyone." | Negative |
 
 ---
 
-## Zero-Shot Results
-
-### Review 1
-**Text:** "The product arrived damaged and customer service was unhelpful."  
-**Sentiment:** Negative
-
-### Review 2
-**Text:** "Works as expected, nothing special but does the job."  
-**Sentiment:** Neutral
-
-### Review 3
-**Text:** "Absolutely love this! Best purchase I've made all year!"  
-**Sentiment:** Positive
-
-### Review 4
-**Text:** "The quality is okay but slightly overpriced for what you get."  
-**Sentiment:** Neutral
-
-### Review 5
-**Text:** "Terrible experience, would not recommend to anyone."  
-**Sentiment:** Negative
-
----
-
-## Observations
-
-The zero-shot prompt successfully classified all five reviews without requiring any examples. Strongly positive and strongly negative reviews were easy to identify, while mixed opinions such as "okay but slightly overpriced" were classified as neutral because they contained both positive and negative elements. This serves as the baseline before applying few-shot prompting with labeled examples.
-
-# 3.2 Few-Shot Prompting
-
-## Step 2: Few-Shot Attempt
-
-### Objective
-
-Improve sentiment classification by providing labeled examples before asking the LLM to classify new reviews.
-
----
+# Step 2: Few-Shot Attempt
 
 ## Few-Shot Prompt
 
-> Classify each customer review as Positive, Negative, or Neutral based on the examples below.
->
-> **Examples:**
->
-> Review: "This product exceeded my expectations!"
->
-> Sentiment: Positive
->
-> Review: "Completely broke after one week of use."
->
-> Sentiment: Negative
->
-> Review: "It's fine, does what it says on the box."
->
-> Sentiment: Neutral
->
-> Review: "Excellent quality and fast delivery."
->
-> Sentiment: Positive
->
-> Review: "The item was defective and support never responded."
->
-> Sentiment: Negative
->
-> Now classify the following reviews:
->
-> 1. "The product arrived damaged and customer service was unhelpful."
->
-> 2. "Works as expected, nothing special but does the job."
->
-> 3. "Absolutely love this! Best purchase I've made all year!"
->
-> 4. "The quality is okay but slightly overpriced for what you get."
->
-> 5. "Terrible experience, would not recommend to anyone."
+> Classify the sentiment of each customer review as Positive, Negative, or Neutral using the examples below.
+
+### Examples
+
+Review: "This product exceeded my expectations and works perfectly."
+
+Sentiment: **Positive**
+
+Review: "Completely broke after one week of use."
+
+Sentiment: **Negative**
+
+Review: "It's fine and does what it says on the box."
+
+Sentiment: **Neutral**
+
+Review: "Amazing quality and excellent customer support."
+
+Sentiment: **Positive**
+
+Review: "The item arrived late and was missing parts."
+
+Sentiment: **Negative**
+
+### Test Reviews & Results
+
+| Review # | Review | Classification |
+|-----------|---------|---------------|
+| 1 | "The product arrived damaged and customer service was unhelpful." | Negative |
+| 2 | "Works as expected, nothing special but does the job." | Neutral |
+| 3 | "Absolutely love this! Best purchase I've made all year!" | Positive |
+| 4 | "The quality is okay but slightly overpriced for what you get." | Neutral |
+| 5 | "Terrible experience, would not recommend to anyone." | Negative |
 
 ---
 
-## Few-Shot Results
+# Step 3: Analysis
 
-| Review | Classification |
-|----------|---------------|
-| "The product arrived damaged and customer service was unhelpful." | **Negative** |
-| "Works as expected, nothing special but does the job." | **Neutral** |
-| "Absolutely love this! Best purchase I've made all year!" | **Positive** |
-| "The quality is okay but slightly overpriced for what you get." | **Neutral** |
-| "Terrible experience, would not recommend to anyone." | **Negative** |
-
----
-
-## Detailed Classifications
-
-### Review 1
-**Text:** "The product arrived damaged and customer service was unhelpful."  
-**Sentiment:** Negative
-
-### Review 2
-**Text:** "Works as expected, nothing special but does the job."  
-**Sentiment:** Neutral
-
-### Review 3
-**Text:** "Absolutely love this! Best purchase I've made all year!"  
-**Sentiment:** Positive
-
-### Review 4
-**Text:** "The quality is okay but slightly overpriced for what you get."  
-**Sentiment:** Neutral
-
-### Review 5
-**Text:** "Terrible experience, would not recommend to anyone."  
-**Sentiment:** Negative
-
----
-
-## Comparison: Zero-Shot vs Few-Shot
-
-| Review | Zero-Shot | Few-Shot |
-|----------|-----------|-----------|
-| Product arrived damaged and customer service was unhelpful | Negative | Negative |
-| Works as expected, nothing special but does the job | Neutral | Neutral |
-| Absolutely love this! Best purchase I've made all year | Positive | Positive |
-| Quality is okay but slightly overpriced | Neutral | Neutral |
-| Terrible experience, would not recommend | Negative | Negative |
-
----
-
-## Analysis
-
-The few-shot prompt provided examples that demonstrated how positive, negative, and neutral sentiments should be classified. Although the classifications remained the same for this small dataset, the examples helped establish clearer decision-making criteria and reduced ambiguity. Few-shot prompting is particularly useful when dealing with more complex reviews containing mixed sentiments or domain-specific language. By learning from examples, the model can produce more consistent and reliable classifications across similar tasks.
-
-## Step 3: Analysis
-
-### Comparison Table
+## Comparison Table
 
 | Review # | Zero-Shot Result | Few-Shot Result | Correct Label | Improved? |
-|-----------|------------------|-----------------|---------------|-----------|
+|-----------|-----------------|----------------|---------------|-----------|
 | 1 | Negative | Negative | Negative | No |
 | 2 | Neutral | Neutral | Neutral | No |
 | 3 | Positive | Positive | Positive | No |
 | 4 | Neutral | Neutral | Neutral | No |
 | 5 | Negative | Negative | Negative | No |
 
+### Accuracy Summary
+
+| Method | Correct Predictions | Accuracy |
+|----------|-------------------|------------|
+| Zero-Shot | 5/5 | 100% |
+| Few-Shot | 5/5 | 100% |
+
 ---
 
-### Analysis
+## Explanation
 
-In this example, both the zero-shot and few-shot approaches produced the same classifications because the reviews contained clear sentiment cues. However, few-shot prompting is most useful when tasks are ambiguous, domain-specific, or require a particular output format. By providing examples, the model learns the desired pattern and can generate more consistent and accurate results, especially for complex or subjective classification tasks.
+Few-shot prompting is most useful when tasks involve complex classification rules, specialized domains, or ambiguous examples. By providing examples, the model learns the desired pattern, format, and decision criteria before processing new inputs. This often improves consistency and accuracy, especially when the task is not straightforward or when multiple interpretations are possible.
 
 # Part 4: Responsible AI & Limitations
 
