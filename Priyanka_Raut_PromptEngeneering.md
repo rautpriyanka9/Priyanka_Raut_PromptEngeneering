@@ -111,42 +111,7 @@ Kind regards,
 
 The initial prompt generated a basic rejection email with limited professionalism. By adding gratitude, a clear reason for declining, and an expression of future interest, the final prompt produced a more polished response that preserves a positive relationship with the company. This demonstrates how prompt refinement can significantly improve tone, clarity, and effectiveness in professional communication.
 
-## 1.1 Scenario C: Creative Content
 
-### Objective
-Generate a creative marketing tagline for a new eco-friendly water bottle brand.
-
----
-
-## Prompt Iteration Process
-
-| Version | Prompt | What Changed | Why This Improved the Output |
-|----------|---------|--------------|-----------------------------|
-| V1 | Create a tagline for an eco-friendly water bottle brand. | N/A | The prompt was too broad and did not specify the brand personality or target audience. |
-| V2 | Create a catchy and memorable tagline for an eco-friendly water bottle brand that promotes sustainability and healthy living. | Added brand values and desired tone. | Generated taglines that better reflected the product's purpose and appeal. |
-| V3 | Create five short, creative, and memorable taglines for a modern eco-friendly water bottle brand. Focus on sustainability, reducing plastic waste, and staying hydrated. Use a positive and inspiring tone suitable for marketing campaigns. | Added target messaging, tone, and quantity requirements. | Produced stronger, more marketable taglines aligned with the brand's goals. |
-
----
-
-### Final Prompt
-
-> Create five short, creative, and memorable taglines for a modern eco-friendly water bottle brand. Focus on sustainability, reducing plastic waste, and staying hydrated. Use a positive and inspiring tone suitable for marketing campaigns.
-
----
-
-### Final LLM Response
-
-1. **Sip Smart. Live Green.**
-2. **Hydrate Today. Protect Tomorrow.**
-3. **Refill the Bottle. Renew the Planet.**
-4. **Every Sip Makes a Difference.**
-5. **Drink Pure. Leave Less Behind.**
-
-**Selected Best Tagline:**
-
-### **"Hydrate Today. Protect Tomorrow."**
-
-This tagline is memorable, communicates both personal and environmental benefits, and aligns well with the brand's eco-friendly mission.
 
 ---
 
