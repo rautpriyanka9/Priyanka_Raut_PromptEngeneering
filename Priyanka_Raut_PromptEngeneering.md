@@ -300,7 +300,61 @@ Be part of the change. One bottle. Countless positive ripples.
 
 *Figure: Promotional flyer for the Pure Flow eco-friendly water bottle brand, highlighting sustainability, hydration, and environmentally responsible living.*
 
+# 1.2 Iteration Documentation
 
+## Scenario A: Technical Explanation (Neural Networks)
+
+| Version | Prompt | What Changed | Why This Improved the Output |
+|----------|---------|--------------|-----------------------------|
+| V1 | Explain neural networks to a 10-year-old. | N/A | N/A |
+| V2 | Explain neural networks to a 10-year-old child using simple language, a real-life analogy, and a short example. Avoid technical jargon and keep the explanation easy to understand. | Added instructions for simple language, analogy, example, and avoidance of technical terms. | Made the explanation more relatable, engaging, and easier for children to understand. |
+| V3 | Explain neural networks to a 10-year-old child with a pictorial explanation. Use simple language and examples. Use a visual image to help explain how neural networks work. | Added requirement for a pictorial explanation and visual learning support. | Improved comprehension through visual learning and increased engagement for young learners. |
+
+---
+
+## Scenario B: Professional Email
+
+| Version | Prompt | What Changed | Why This Improved the Output |
+|----------|---------|--------------|-----------------------------|
+| V1 | Write an email declining a job offer. | N/A | N/A |
+| V2 | Write a professional email declining a job offer politely. Thank the company for the opportunity and maintain a positive tone. | Added professionalism, gratitude, and positive tone requirements. | Produced a more respectful and business-appropriate response. |
+| V3 | Write a professional and courteous email declining a job offer. Express sincere gratitude for the opportunity, briefly mention that the decision was difficult, and maintain a positive relationship with the company. Also express continued interest in the company and openness to future opportunities. Keep the tone respectful, concise, and professional. | Added future networking intent, appreciation, and relationship-building elements. | Generated a polished email that preserves professional relationships and future opportunities. |
+
+---
+
+## Scenario C: Creative Content (Eco-Friendly Water Bottle Brand)
+
+| Version | Prompt | What Changed | Why This Improved the Output |
+|----------|---------|--------------|-----------------------------|
+| V1 | Create a tagline for an eco-friendly water bottle brand. | N/A | N/A |
+| V2 | Create five catchy and memorable taglines for an eco-friendly water bottle brand that promotes sustainability and healthy living. Use a positive and inspiring tone. | Added brand values, desired tone, and requested multiple options. | Increased creativity and provided a variety of marketing ideas to choose from. |
+| V3 | Create a professional marketing flyer for a new eco-friendly water bottle brand called Pure Flow. Include a powerful headline, a short sustainability-focused brand message, and five creative taglines. Use persuasive marketing language that promotes reusable bottles, environmental responsibility, and healthy living. The content should be visually engaging, suitable for a promotional flyer, and inspire customers to choose sustainable hydration solutions. | Expanded from tagline generation to full flyer creation with branding, messaging, and visual context. | Produced comprehensive marketing content suitable for real-world promotional use and stronger audience engagement. |
+
+# 1.3 Role and Context Usage
+
+## Scenario A: Technical Explanation
+
+### Role Assignment
+> You are an expert elementary school teacher who specializes in explaining technology concepts to children.
+
+### Context Setting
+> The audience is a 10-year-old child with no prior knowledge of artificial intelligence or neural networks. Use simple language, relatable examples, and a visual explanation.
+
+---
+
+## Scenario C: Creative Content
+
+### Role Assignment
+> You are a professional marketing copywriter specializing in eco-friendly consumer products.
+
+### Context Setting
+> Create promotional content for a new eco-friendly water bottle brand called Pure Flow. The target audience consists of environmentally conscious consumers who value sustainability, healthy living, and reducing plastic waste.
+
+---
+
+## Explanation
+
+Adding role assignment helped the AI adopt the perspective and expertise needed for each task. In Scenario A, the "expert teacher" role encouraged the use of child-friendly language, simple examples, and educational explanations. In Scenario C, the "professional copywriter" role resulted in more persuasive and marketing-focused content that aligned with branding goals. Providing context about the audience, purpose, and background allowed the AI to generate more relevant, targeted, and effective outputs compared to generic prompts.
 
 # Part 2: Temperature & Parameter Control
 
