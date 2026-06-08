@@ -31,7 +31,7 @@ Just like students improve by practicing, neural networks improve by learning fr
 
 ### Pictorial Explanation
 
-![Neural Network Infographic](Images/neural_network_explained.png)
+![Neural Network Infographic](Images/neural-network-explained.png)
 
 *Figure 1: Educational infographic explaining neural networks to children.*
 
