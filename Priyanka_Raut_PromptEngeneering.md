@@ -111,22 +111,28 @@ Kind regards,
 
 The initial prompt generated a basic rejection email with limited professionalism. By adding gratitude, a clear reason for declining, and an expression of future interest, the final prompt produced a more polished response that preserves a positive relationship with the company. This demonstrates how prompt refinement can significantly improve tone, clarity, and effectiveness in professional communication.
 
-## Scenario C: Creative Content
+## 1.1 Scenario C: Creative Content
 
 ### Objective
-Create marketing content for an eco-friendly water bottle brand.
+Generate a creative marketing tagline for a new eco-friendly water bottle brand.
+
+---
+
+## Prompt Iteration Process
 
 | Version | Prompt | What Changed | Why This Improved the Output |
 |----------|---------|--------------|-----------------------------|
-| V1 | Create a tagline for an eco-friendly water bottle brand. | N/A | The prompt was too generic and did not provide information about brand values or tone. |
-| V2 | Create a catchy and memorable tagline for an eco-friendly water bottle brand that promotes sustainability and healthy living. | Added brand values and desired outcome. | Generated taglines more aligned with the product's purpose and customer appeal. |
-| V3 | Create five short, creative, and memorable taglines for a modern eco-friendly water bottle brand. Focus on sustainability, reducing plastic waste, and staying hydrated. Use a positive and inspiring tone suitable for marketing campaigns. | Added brand context, sustainability focus, desired tone, and quantity requirements. | Produced stronger marketing-focused taglines that were creative, memorable, and aligned with the brand strategy. |
+| V1 | Create a tagline for an eco-friendly water bottle brand. | N/A | The prompt was too broad and did not specify the brand personality or target audience. |
+| V2 | Create a catchy and memorable tagline for an eco-friendly water bottle brand that promotes sustainability and healthy living. | Added brand values and desired tone. | Generated taglines that better reflected the product's purpose and appeal. |
+| V3 | Create five short, creative, and memorable taglines for a modern eco-friendly water bottle brand. Focus on sustainability, reducing plastic waste, and staying hydrated. Use a positive and inspiring tone suitable for marketing campaigns. | Added target messaging, tone, and quantity requirements. | Produced stronger, more marketable taglines aligned with the brand's goals. |
 
 ---
 
 ### Final Prompt
 
 > Create five short, creative, and memorable taglines for a modern eco-friendly water bottle brand. Focus on sustainability, reducing plastic waste, and staying hydrated. Use a positive and inspiring tone suitable for marketing campaigns.
+
+---
 
 ### Final LLM Response
 
@@ -136,25 +142,11 @@ Create marketing content for an eco-friendly water bottle brand.
 4. **Every Sip Makes a Difference.**
 5. **Drink Pure. Leave Less Behind.**
 
-### Selected Best Tagline
+**Selected Best Tagline:**
 
-**"Hydrate Today. Protect Tomorrow."**
+### **"Hydrate Today. Protect Tomorrow."**
 
-### Creative Marketing Flyer
-
-![Eco-Friendly Water Bottle Marketing Flyer](Images/marketing-flyer.png)
-
-*Figure 2: Marketing flyer promoting an eco-friendly water bottle brand using the selected tagline.*
-
-### Reflection
-
-The initial prompt generated a basic tagline with limited brand alignment. Adding sustainability and healthy living as key themes improved relevance and audience appeal. The final iteration provided detailed context, tone, and campaign objectives, resulting in multiple creative tagline options suitable for marketing use. Including a visual flyer further strengthened the campaign by combining persuasive messaging with engaging design.
-
----
-
-## Overall Learning from Iteration
-
-Across all three scenarios, each refinement added more clarity, context, and constraints. Specifying the audience, assigning a role, and defining the desired tone significantly improved output quality. Iterative prompting reduced ambiguity and resulted in responses that were more accurate, relevant, and aligned with the intended goals.
+This tagline is memorable, communicates both personal and environmental benefits, and aligns well with the brand's eco-friendly mission.
 
 ---
 
