@@ -356,89 +356,92 @@ Be part of the change. One bottle. Countless positive ripples.
 
 Adding role assignment helped the AI adopt the perspective and expertise needed for each task. In Scenario A, the "expert teacher" role encouraged the use of child-friendly language, simple examples, and educational explanations. In Scenario C, the "professional copywriter" role resulted in more persuasive and marketing-focused content that aligned with branding goals. Providing context about the audience, purpose, and background allowed the AI to generate more relevant, targeted, and effective outputs compared to generic prompts.
 
+
 # Part 2: Temperature & Parameter Control
+
 
 ## 2.1 Temperature Experimentation
 
 ### Selected Task
-**Creating a Short Story Opening (2–3 sentences)**
+**Creating a Short Story Opening (2–3 Sentences)**
 
 ---
 
 ## Base Prompt
 
-> Write the opening of a short story about a mysterious door that appears in a small town.
-
-Since ChatGPT Free does not provide direct temperature controls, the following simulations were used:
-
-- **Low Temperature (0.2):** Added "Be precise and consistent."
-- **Medium Temperature (0.7):** Used the prompt as-is.
-- **High Temperature (1.2):** Added "Be creative and explore diverse ideas."
+> Write the opening of a short story about a mysterious door that appears in a school hallway.
 
 ---
 
-## Low Temperature (0.2)
+# Test 1: Low Temperature
 
-### Prompt
+### Temperature Value
+**0.2 (Low Temperature)**
 
-> Write the opening of a short story about a mysterious door that appears in a small town. Be precise and consistent.
+### Prompt Used
+> Write the opening of a short story about a mysterious door that appears in a school hallway. Be precise and consistent.
 
 ### Output
 
-One morning, the residents of Maple Creek discovered a wooden door standing alone in the town square. No building was attached to it, and no one knew where it had come from. By noon, a crowd had gathered to examine the strange object.
+On Monday morning, students noticed a new door at the end of the school hallway. No teacher knew where it had come from, and it did not appear on any school map. Curious but cautious, the students gathered around it during lunch.
 
 ---
 
-## Medium Temperature (0.7)
+# Test 2: Medium Temperature
 
-### Prompt
+### Temperature Value
+**0.7 (Medium Temperature)**
 
-> Write the opening of a short story about a mysterious door that appears in a small town.
+### Prompt Used
+> Write the opening of a short story about a mysterious door that appears in a school hallway.
 
 ### Output
 
-The door appeared overnight in the center of Maple Creek, where children usually played after school. Painted deep blue and framed with silver carvings, it stood alone without any wall around it. As whispers spread through the town, people began to wonder whether opening it would reveal a secret—or a danger.
+When Maya arrived at school, she immediately noticed something strange. Between the science lab and the library stood a tall wooden door covered in silver symbols that no one had seen before. As whispers spread through the hallway, Maya couldn't shake the feeling that the door was waiting for someone to open it.
 
 ---
 
-## High Temperature (1.2)
+# Test 3: High Temperature
 
-### Prompt
+### Temperature Value
+**1.3 (High Temperature)**
 
-> Write the opening of a short story about a mysterious door that appears in a small town. Be creative and explore diverse ideas.
+### Prompt Used
+> Write the opening of a short story about a mysterious door that appears in a school hallway. Be creative and explore diverse ideas.
 
 ### Output
 
-At dawn, a floating crimson door drifted gently above the fountain in Maple Creek, humming a melody that no one had heard before. The town clocks stopped at exactly 6:17 a.m., and every crow vanished from the sky. By sunset, handwritten notes had begun slipping from beneath the door, each addressed to a different resident and signed only with the words, "I've been waiting."
+The door appeared overnight, painted in swirling colors that seemed to move whenever nobody looked directly at them. Every few minutes, tiny golden feathers drifted out from beneath it, carrying the scent of rain and cinnamon through the hallway. By second period, the door had already whispered three different names—and one of them belonged to Emma.
 
 ---
 
-## Comparison Table
+# Comparison Table
 
-| Aspect | Low Temperature (0.2) | Medium Temperature (0.7) | High Temperature (1.2) |
-|----------|----------------------|-------------------------|------------------------|
-| Creativity | Low | Moderate | High |
-| Predictability | Very High | Medium | Low |
-| Detail Level | Basic | Moderate | Rich and imaginative |
-| Writing Style | Direct and factual | Balanced and descriptive | Highly creative and dramatic |
-| Risk of Unusual Ideas | Very Low | Moderate | High |
-| Best Use Case | Technical writing, instructions, factual content | General-purpose content creation | Storytelling, brainstorming, creative marketing |
+| Feature | Low Temperature (0.2) | Medium Temperature (0.7) | High Temperature (1.3) |
+|----------|----------------------|--------------------------|------------------------|
+| Writing Style | Direct and factual | Descriptive and engaging | Highly imaginative and creative |
+| Creativity Level | Low | Moderate | High |
+| Predictability | Very predictable | Balanced | Unpredictable |
+| Detail Level | Basic | Moderate | Rich and vivid |
+| Focus | Clear and structured | Story-focused | Fantasy-oriented |
+| Risk of Unusual Ideas | Very low | Moderate | High |
+| Best Use | Information-focused writing | General storytelling | Creative fiction and brainstorming |
 
 ---
 
-## Observations
+# 2.2 Analysis & Recommendations
 
-1. The low-temperature output was clear, direct, and highly predictable.
-2. The medium-temperature output balanced creativity and coherence, making it engaging while remaining easy to follow.
-3. The high-temperature output introduced imaginative and unexpected elements, creating a stronger sense of mystery and intrigue.
-4. As temperature increased, creativity and diversity of ideas increased, while predictability decreased.
-5. Choosing the appropriate temperature depends on the task: lower temperatures are ideal for factual content, while higher temperatures are better suited for creative writing and ideation.
+### When would you use low temperature?
 
-## 2.2 Analysis & Recommendations
+Low temperature is useful when accuracy, consistency, and predictability are important. For example, it is ideal for generating technical documentation and writing professional business emails. It can also be used for summarizing reports or answering factual questions where creativity is not required.
 
-Low temperature should be used when accuracy, consistency, and predictability are important. Two specific use cases are generating technical documentation and drafting professional business emails, where clear and reliable information is required. High temperature is most useful when creativity and originality are desired. Two specific use cases are writing fiction stories and brainstorming marketing slogans or advertising campaigns, where diverse and imaginative ideas are valuable.
+### When would you use high temperature?
 
-For the short story opening task, the **high temperature setting** worked best because it generated more vivid descriptions, unique ideas, and a stronger sense of mystery. The creative elements, such as the floating crimson door and personalized notes, made the story more engaging and intriguing. While the medium temperature produced a balanced result, the high temperature setting was more effective for capturing the imagination and creating an interesting story opening.
+High temperature is useful when generating creative and original content. For example, it works well for writing stories, poems, and marketing campaign ideas. It is also valuable during brainstorming sessions where multiple unique possibilities are desired.
+
+### Which temperature worked best for this task and why?
+
+For the short story opening task, the **medium temperature (0.7)** produced the best result. It balanced creativity and coherence by creating an interesting mystery while maintaining a clear storyline. The low temperature version felt too plain, while the high temperature version introduced highly imaginative elements that could become less predictable. The medium setting created an engaging story opening that was both creative and easy to follow.
 
 
 # Part 3: Strategic Prompting Techniques
