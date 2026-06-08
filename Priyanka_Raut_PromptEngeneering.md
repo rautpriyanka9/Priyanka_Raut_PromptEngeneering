@@ -95,7 +95,7 @@ A neural network is a group of tiny digital "thinkers" that work together. They 
 
 # Pictorial Explanation
 
-![Neural Network Explained](images/neural-network-explained.png)
+![Neural Network Explained](Images/neural-network-explained.png)
 
 *Figure: A child-friendly visual explanation showing how a neural network identifies a cat by passing information through different layers and learning from examples.*
 
